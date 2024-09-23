@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: "roboto" Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-black {
+    background-color: #3f3f3f;
+    padding: 15px;
+}
+
+.row-black {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col-6 {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    flex-wrap: wrap;
+    color: #fff;
+    align-items: center;
+}
+
+.col-6 p {
+    margin-right: 10px;
+}
+
+.col-6 i {
+    color: #f82a68;
+}
+
+.btn-1 a {
+    text-decoration: none;
+    background-color: #00d0ff;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-1 a:hover {
+    background-color: #fff;
+    color: #00d0ff;
+    transition: 0.3s;
+
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 208, 255);
+}
+
+
+.logo img {
+    height: 80px;
+
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Pour garder le logo à gauche et les icônes à droite */
+    align-items: center;
+    width: 100%;
+
+}
+
+/* Styles pour la navigation */
+.navigation {
+    flex-grow: 1;
+    /* Permet à la navigation de prendre de l'espace */
+    display: flex;
+    justify-content: center;
+    /* Centre les éléments à l'intérieur */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.navigation li {
+    margin: 0 15px;
+    /* Espacement entre les éléments */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #f4f4f4;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.icons div {
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.icons div:hover {
+    color: white
+}
+
+/*la baniere*/
+.hero {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/baniere2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+/*texte qui est la baniere*/
+.hero-text {
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid #00d0ff;
+    /*permet de faire la bordure orange*/
+    padding: 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    color: white;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 2rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    /*espace entre a apropos et plat favoris*/
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    /*Pour espacer nos colonne*/
+    flex-wrap: wrap;
+    /*Ramene les colonne à la ligne si l'espace est trop petite*/
+}
+
+.col-md-6 {
+    flex: 1 1 calc(25% - 10px);
+    /* donne 25% à chaque colonne*/
+    min-width: 250px;
+    /*Force les colonne à revenir à la ligne sur petit écran */
+    padding-bottom: var(--padding);
+    /*Ajoute des interligne de bas sur nos colonnes pour empecher que ce ça cole sur le mobile*/
+}
+
+.col-md-6 h1 {
+    margin-bottom: 15px;
+    /*espace en bas entre le h1 et le p */
+    font-size: 40px;
+}
+
+.col-md-6 p {
+    text-align: justify;
+    /*Justifie */
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.col-md-6 img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+section {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #00d0ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00d0ff;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li {
+        margin: 10px 0;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icons div {
+        margin: 5px 0;
+    }
+}
