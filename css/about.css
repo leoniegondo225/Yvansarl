@@ -137,7 +137,7 @@
 .hero {
     width: 100%;
     height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/baniere2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/plan.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,11 +235,110 @@ h1 {
     color: #00d0ff;
 }
 
+
+article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.articles h1{
+    font-size: 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 80px;
+   
+
+}
+.cols{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.col1{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+.col2{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+.col3{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+
+.col4{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+
+
+.cols:hover {
+    transform: scale(1.2);
+}
+.cols img{
+    width: 65%;
+    height: 80%;
+    padding: 5px;
+}
+.article img{
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.article a{
+    color: #051215;
+    font-size: 20px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background: #00d0ff;
     color: white;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer_section {
+    width: 30%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.footer_section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer_section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 @media (max-width: 600px) {
